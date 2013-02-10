@@ -1,0 +1,25 @@
+doctype 5
+html(lang='en')
+  head
+    title I love these songs
+    block css
+      link(href='css/bootstrap.min.css', rel='stylesheet');
+      link(href='css/style.css', rel='stylesheet');
+      link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700', rel='stylesheet');    
+    block scripts
+      script(src='js/libs/modernizr/modernizr-2.0.6.min.js')
+  body
+    include includes/topbar
+    div(class='container')
+      div(class='row')
+        include includes/sidebar
+        include includes/content
+
+    block bottomscripts
+      include includes/templates
+      script(src='js/libs/jquery/jquery-1.7.1.min.js')
+      script(src='js/libs/underscore/underscore-min.js')
+      script(src='js/libs/backbone/backbone-min.js')
+      script(src='js/libs/swfobject/swfobject.js')
+      script(src='js/libs/bootstrap/v.2.0/bootstrap.min.js')
+      script(src='js/Ilts.js')
